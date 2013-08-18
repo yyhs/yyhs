@@ -8,6 +8,24 @@ public class Classes {
 	private ArrayList<Integer> teachers;
 	private String graduate_time;
 	private int head_teacher;
+	private String description;
+	private String logo;
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getLogo() {
+		return logo;
+	}
+
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
 
 	public int getClass_id() {
 		return class_id;

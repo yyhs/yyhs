@@ -18,7 +18,7 @@ public class User {
 	private String industry;
 	private String job;
 	private String company;
-	private String hometown;  
+	private String hometown;
 
 	public int getUid() {
 		return uid;
@@ -140,4 +140,11 @@ public class User {
 		this.friends = friends;
 	}
 
+	public String getHometown() {
+		return hometown;
+	}
+
+	public void setHometown(String hometown) {
+		this.hometown = hometown;
+	}
 }
