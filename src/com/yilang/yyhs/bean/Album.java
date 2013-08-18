@@ -10,6 +10,15 @@ public class Album {
 	private String pubtime;
 	private String description;
 	private ArrayList<String> images;
+	private String visibility;
+	
+	public String getVisibility() {
+		return visibility;
+	}
+
+	public void setVisibility(String visibility) {
+		this.visibility = visibility;
+	}
 
 	public int getAlbum_id() {
 		return album_id;

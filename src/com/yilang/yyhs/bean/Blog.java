@@ -11,6 +11,15 @@ public class Blog {
 	private String pubdate;
 	private int author_id;
 	private ArrayList<Integer> owners;
+	private String visibility;
+
+	public String getVisibility() {
+		return visibility;
+	}
+
+	public void setVisibility(String visibility) {
+		this.visibility = visibility;
+	}
 
 	public int getBlog_id() {
 		return blog_id;
