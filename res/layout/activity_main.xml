@@ -6,8 +6,8 @@
     
     <include layout="@layout/main_header"/>
 	
-    <TextView 
-        android:text="main content"
+    <ListView 
+        android:id="@+id/message_list"
 		android:layout_width="fill_parent"
 		android:layout_height="0dip"
 		android:layout_weight="1"

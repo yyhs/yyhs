@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="50dip"
     android:background="@color/gray"
     android:gravity="center_vertical"
     android:orientation="horizontal" >
-
-    <RadioGroup
+ -->
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/main_footer"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dip"
+        android:background="@color/gray"
         android:orientation="horizontal" >
 
         <RadioButton
@@ -18,8 +19,9 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:button="@null"
+            android:checked="true"
             android:clickable="true"
-            android:drawableTop="@drawable/main_footer_forum_nor" />
+            android:drawableTop="@drawable/custom_footer_forum" />
 
         <RadioButton
             android:id="@+id/main_footer_region"
@@ -28,7 +30,7 @@
             android:layout_weight="1"
             android:button="@null"
             android:clickable="true"
-            android:drawableTop="@drawable/main_footer_region_nor" />
+            android:drawableTop="@drawable/custom_footer_region" />
 
         <RadioButton
             android:id="@+id/main_footer_user"
@@ -37,7 +39,7 @@
             android:layout_weight="1"
             android:button="@null"
             android:clickable="true"
-            android:drawableTop="@drawable/main_footer_user_nor" />
+            android:drawableTop="@drawable/custom_footer_user" />
     </RadioGroup>
 
-</LinearLayout>
+<!-- </LinearLayout> -->
