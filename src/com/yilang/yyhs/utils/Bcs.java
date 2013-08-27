@@ -1,4 +1,4 @@
-package com.yilang.yyhs.storage;
+package com.yilang.yyhs.utils;
 
 import com.baidu.inf.iis.bcs.BaiduBCS;
 import com.baidu.inf.iis.bcs.auth.BCSCredentials;
