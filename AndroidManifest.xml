@@ -31,6 +31,14 @@
             android:name="com.yilang.yyhs.ui.MainActivity"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
+         <activity
+            android:name="com.yilang.yyhs.ui.MsgActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.yilang.yyhs.ui.SetupActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
     </application>
 
 </manifest>

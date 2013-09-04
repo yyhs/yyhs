@@ -6,5 +6,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="welcome">Welcome</string>
     <string name="main_title">Title</string>
+    <string name="main_message">message</string>
+    <string name="main_forumer">forumer</string>
+    <string name="main_setup">setup</string>
 
 </resources>

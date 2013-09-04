@@ -11,10 +11,12 @@
         android:layout_width="fill_parent"
         android:layout_height="50dip"
         android:background="@color/gray"
+        android:gravity="center"
         android:orientation="horizontal" >
 
         <RadioButton
             android:id="@+id/main_footer_forum"
+            android:text="@string/main_message"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
             android:layout_weight="1"
@@ -25,6 +27,7 @@
 
         <RadioButton
             android:id="@+id/main_footer_region"
+             android:text="@string/main_forumer"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
             android:layout_weight="1"
@@ -34,6 +37,7 @@
 
         <RadioButton
             android:id="@+id/main_footer_user"
+             android:text="@string/main_setup"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
             android:layout_weight="1"
