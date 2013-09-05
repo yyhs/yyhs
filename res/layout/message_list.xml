@@ -6,8 +6,13 @@
 
     <ImageView
         android:id="@+id/photo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_margin="5dip"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dip"
+        android:maxWidth="40dip"
+        android:scaleType="fitCenter"
         android:src="@android:drawable/sym_action_chat" />
 
     <LinearLayout
@@ -17,13 +22,18 @@
 
         <TextView
             android:id="@+id/contact"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip"
+            android:gravity="center_vertical" />
 
         <TextView
             android:id="@+id/message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:gravity="center_vertical" />
     </LinearLayout>
 
 </LinearLayout>

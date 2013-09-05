@@ -20,8 +20,11 @@ import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.CommonDataKinds.Photo;
 import android.text.TextUtils;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.SimpleAdapter.ViewBinder;
 
 public class MsgActivity extends Activity {
 	private ListView message_list;
@@ -49,6 +52,20 @@ public class MsgActivity extends Activity {
 					R.layout.message_list, new String[] { "photo", "contact",
 							"message" }, new int[] { R.id.photo, R.id.contact,
 							R.id.message });
+			adapter.setViewBinder(new ViewBinder(){
+				
+				public boolean setViewValue(View view, Object data,  
+		                String textRepresentation) {  
+		            // TODO Auto-generated method stub  
+		            if((view instanceof ImageView) && (data instanceof Bitmap)) {  
+		                ImageView imageView = (ImageView) view;  
+		                Bitmap bmp = (Bitmap) data;  
+		                imageView.setImageBitmap(bmp);  
+		                return true;  
+		            }  
+		            return false;  
+		        }  
+			});
 			message_list = (ListView) findViewById(R.id.message_list);
 			message_list.setAdapter(adapter);
 		}
@@ -66,10 +83,11 @@ public class MsgActivity extends Activity {
 			for (int i = 0; i < mContactsName.size(); i++) {
 				map = new HashMap<String, Object>();
 				// System.out.println((String)mContactsName.get(i));
-				map.put("photo", R.drawable.main_footer_forum_nor);
+			//	map.put("photo", R.drawable.main_footer_forum_nor);
+				map.put("photo", (Bitmap) mContactsPhoto.get(i));
 				map.put("contact", (String) mContactsName.get(i));
 				// map.put("contact", "me");
-				map.put("message", "hello");
+				map.put("message", (String) mContactsNumber.get(i));
 				list.add(map);
 			}
 			return list;
@@ -102,6 +120,8 @@ public class MsgActivity extends Activity {
 								R.drawable.ic_launcher);
 					}
 					mContactsName.add(contactName);
+					mContactsPhoto.add(contactPhoto);
+					mContactsNumber.add(phoneNumber);
 				}
 				cursor.close();
 			}
